@@ -19,13 +19,11 @@ O público-alvo proposto inclui proprietários de piscinas residenciais e pessoa
 
 ### Ideia inicial
 
-A Ideia do Produto, atraves de uma certa dificuldade para encontrar bons conteudos sobre a manutenção da piscina, medir e manter os parametros da agua para um maior aproveitamento da piscina
-
 A ideia do produto surgiu a partir da dificuldade de encontrar conteúdos confiáveis e de fácil compreensão sobre a manutenção da piscina, especialmente em relação à medição e ao controle dos parâmetros da água, buscando garantir uma melhor conservação e aproveitamento da piscina.
 
 Como surgiu a ideia do produto?
 
-Eu tenho uma chácara e sou o responsável por realizar a manutenção da piscina. No início, tive dificuldade para encontrar informações corretas, precisas e confiáveis sobre os cuidados necessários e o controle adequado da água.
+Eu (Vinicius Francelino) tenho uma chácara e sou o responsável por realizar a manutenção da piscina. No início, tive dificuldade para encontrar informações corretas, precisas e confiáveis sobre os cuidados necessários e o controle adequado da água.
 
 Quais alternativas foram consideradas?
 
@@ -94,4 +92,5 @@ O que fariam diferente se tivessem mais tempo?
 
 Com mais tempo, dedicaríamos uma etapa maior ao refinamento dos prompts, buscando fornecer instruções mais detalhadas e específicas para obter resultados ainda mais alinhados com a proposta do projeto. Também realizaríamos uma pesquisa mais aprofundada sobre paleta de cores, identidade visual, tipografia e referências de interface, garantindo maior consistência entre os elementos da aplicação.
 
-Além disso, investiríamos mais tempo em testes de usabilidade, responsividade, acessibilidade e revisão dos fluxos de navegação
+
+Além disso, investiríamos mais tempo em testes de usabilidade, responsividade, acessibilidade e revisão dos fluxos de navegação.
