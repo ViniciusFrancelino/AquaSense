@@ -52,14 +52,6 @@ Utilizamos como referência marcas conhecidas no segmento de produtos para limpe
 - Lucide React (ícones)
 - HTML5
 
-### Uso de MCP
-
-O MCP foi utilizado como apoio durante o desenvolvimento no VS Code. Ele permite que ferramentas compatíveis disponibilizem contexto e funcionalidades externas ao assistente de programação, ajudando a consultar informações e orientar a implementação.
-
-No AquaSense, o MCP não faz parte da aplicação executada pelo navegador: não há um servidor ou cliente MCP dentro do projeto. A integração meteorológica foi implementada diretamente no código com Axios, no componente `src/components/WeatherWidget.jsx`, que consulta a API pública Open-Meteo e apresenta temperatura, umidade, previsão de chuva e um indicador de risco. Essa abordagem mantém a chamada de clima simples para uma aplicação front-end e não exige uma camada MCP no runtime.
-
-Assim, o MCP apoiou o fluxo de desenvolvimento no editor, enquanto a comunicação em tempo de execução com os dados meteorológicos ocorre via requisição HTTP do navegador para a Open-Meteo.
-
 ### Uso de inteligência artificial
 
 ### Uso de IA
@@ -81,6 +73,27 @@ As sugestões geradas pela IA foram avaliadas durante o desenvolvimento. Algumas
 - O prompt prevê **FSD**, enquanto a implementação está organizada em **MVVM**.
 - O prompt cita **turbidez**, enquanto a demonstração implementa **transparência (%)**.
 - O gráfico do histórico é **ilustrativo/estático**; o histórico de valores de pH é atualizado em estado React.
+
+### Uso de MCP
+
+O MCP foi utilizado como apoio durante o desenvolvimento no VS Code. Ele permite que ferramentas compatíveis disponibilizem contexto e funcionalidades externas ao assistente de programação, ajudando a consultar informações e orientar a implementação.
+
+No AquaSense, o MCP não faz parte da aplicação executada pelo navegador: não há um servidor ou cliente MCP dentro do projeto. A integração meteorológica foi implementada diretamente no código com Axios, no componente `src/components/WeatherWidget.jsx`, que consulta a API pública Open-Meteo e apresenta temperatura, umidade, previsão de chuva e um indicador de risco. Essa abordagem mantém a chamada de clima simples para uma aplicação front-end e não exige uma camada MCP no runtime.
+
+Assim, o MCP apoiou o fluxo de desenvolvimento no editor, enquanto a comunicação em tempo de execução com os dados meteorológicos ocorre via requisição HTTP do navegador para a Open-Meteo.
+
+### Ajustes de responsividade do front-end
+
+A interface foi revisada para se adaptar a celulares, tablets, notebooks e monitores maiores, preservando a identidade visual do AquaSense. Os ajustes foram feitos principalmente em `src/views/AquaSenseView.module.css`, `src/components/WeatherWidget.module.css` e `src/styles/global.css`.
+
+- A navegação se transforma em menu compacto em telas menores.
+- O hero, as etapas, os cards, o painel demonstrativo, os planos, o FAQ e o rodapé reorganizam suas colunas conforme a largura disponível.
+- Os containers principais usam limites de largura maiores em telas amplas, aproveitando melhor o espaço lateral sem esticar excessivamente o conteúdo.
+- Espaçamentos e dimensões de textos, botões, métricas e cartões são ajustados em breakpoints menores para reduzir quebras indesejadas e overflow horizontal.
+- O widget de clima também adapta seus detalhes e alertas para telas estreitas.
+- A página e o elemento raiz ocupam a largura disponível, e a aplicação tem altura mínima igual à viewport.
+
+O build de produção foi executado com sucesso após os ajustes de responsividade.
 
 ### Resultado final
 
